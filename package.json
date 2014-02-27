@@ -1,0 +1,13 @@
+{
+  "name": "language-jade",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Jade TextMate bundle converted for Atom",
+  "repository": "https://github.com/devongovett/atom-jade",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}
