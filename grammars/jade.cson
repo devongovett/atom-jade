@@ -155,7 +155,7 @@
     'name': 'string.interpolated.jade'
   }
   {
-    'begin': '^\\s*(?!\\w+\\:)(?:(([\\w]+))|(?=\\.|#))'
+    'begin': '^\\s*(?!\\w+\\:)(?:(([\\w-]+))|(?=\\.|#))'
     'captures':
       '1':
         'name': 'meta.tag.any.jade'
