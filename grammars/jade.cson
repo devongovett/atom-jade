@@ -1,5 +1,5 @@
 'fileTypes': [
-  'jade'
+  'jade', 'dt'
 ]
 'name': 'Jade'
 'patterns': [
