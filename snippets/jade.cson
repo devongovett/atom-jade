@@ -1,0 +1,209 @@
+'.source.jade':
+    'a()':
+        'prefix': 'a'
+        'body': 'a(href="${1:http://}"${2:, target="_blank"}) ${3:link}'
+
+
+    'action=""':
+        'prefix': 'act'
+        'body': 'action="$1"'
+
+
+    'aria-':
+        'prefix': 'ari'
+        'body': 'aria-$1="$2"'
+
+
+    'button()':
+        'prefix': 'but'
+        'body': 'button(type="${1:submit}"${2:, }) ${3:name}'
+
+
+    'switch case condition':
+        'prefix': 'case'
+        'body': 'case ${1:condition}\n  when ${2:condition}\n    ${3://- code}\n  default\n    ${4://- code}'
+
+    'cdata':
+        'prefix': 'cd'
+        'body': ':cdata\n\t$0'
+
+
+    'class=""':
+        'prefix': 'cla'
+        'body': 'class="$1"'
+
+
+    'coffeescript':
+        'prefix': 'co'
+        'body': ':coffeescript\n\t$0'
+
+
+    'content=""':
+        'prefix': 'con'
+        'body': 'content="$1"'
+
+
+    'data':
+        'prefix': 'data'
+        'body': 'data-$1="$2"'
+
+
+    'each item in items':
+        'prefix': 'each'
+        'body': 'each ${2:value} in ${1:variable}\n  ${3://- code...}'
+
+
+    'extend':
+        'prefix': 'ext'
+        'body': 'extend ${1:layout};'
+
+
+    'form':
+        'prefix': 'form'
+        'body': 'form(id="$1", method="$2", action="$3")'
+
+
+    'href=""':
+        'prefix': 'hre'
+        'body': 'href="$1"'
+
+
+    'id=""':
+        'prefix': 'id'
+        'body': 'id="$1"'
+
+
+    '// if IE':
+        'prefix': 'ie'
+        'body': '// if ${1:lt} IE ${2:9}\r\n\t${3:// new line}'
+
+
+    'if condition':
+        'prefix': 'if'
+        'body': 'if ${1:condition}\n  ${2://- code}'
+
+
+    'if condition':
+        'prefix': 'if'
+        'body': 'if ${1:condition}\n  ${2://- code}\nelse\n  ${3://- code}'
+
+
+    'img()':
+        'prefix': 'img'
+        'body': 'img(src="${1:images/}",$2 alt="$3")'
+
+
+    'include':
+        'prefix': 'inc'
+        'body': 'include ${1:file};'
+
+
+    'input()':
+        'prefix': 'inp'
+        'body': 'input(type="${1:text}",$2 placeholder="${3:placeholder}")'
+
+
+    'itemprop':
+        'prefix': 'itemp'
+        'body': 'itemprop="$1"'
+
+
+    'itemscope':
+        'prefix': 'items'
+        'body': 'itemscope'
+
+
+    'itemtype':
+        'prefix': 'itemt'
+        'body': 'itemtype="http://schema.org/$1"'
+
+
+    'less':
+        'prefix': 'le'
+        'body': ':less\n\t$0'
+
+
+    'link()':
+        'prefix': 'lin'
+        'body': 'link(rel="stylesheet", ${1:type="text/css",} href="${2:css/style.css}")'
+
+
+    'markdown':
+        'prefix': 'md'
+        'body': ':markdown\n\t$0'
+
+
+    'method=""':
+        'prefix': 'met'
+        'body': 'method="$1"'
+
+
+    'mixin':
+        'prefix': 'mix'
+        'body': 'mixin ${1:name}(${2:param1}, ${3:param2})\r\n\t${4:// new line}'
+
+
+    'name=""':
+        'prefix': 'nam'
+        'body': 'name="$1"'
+
+
+    'placeholder=""':
+        'prefix': 'pla'
+        'body': 'placeholder="$1"'
+
+
+    'rel=""':
+        'prefix': 'rel'
+        'body': 'rel="$1"'
+
+
+    'role':
+        'prefix': 'rol'
+        'body': 'role="$1"'
+
+
+    'script()':
+        'prefix': 'scr'
+        'body': 'script(type="application/javascript", src="${1:js/script.js}")'
+
+
+    'src=""':
+        'prefix': 'src'
+        'body': 'src="$1"'
+
+
+    'stylus':
+        'prefix': 'st'
+        'body': ':stylus\n\t$0'
+
+
+    'target=""':
+        'prefix': 'tar'
+        'body': 'target="$1"'
+
+
+
+    'textarea()':
+        'prefix': 'tex'
+        'body': 'textarea(${1:, }placeholder="${2:placeholder}")'
+
+
+    'template':
+        'prefix': 'tem'
+        'body': 'doctype html\r\nhtml\r\n\thead(lang="en")\r\n\t\ttitle ${1:title name}\r\n\t\tmeta(http-equiv="content-type", content="text/html; charset=UTF-8")\r\n\t\tmeta(name="description", content="")\r\n\t\tmeta(name="keywords", content="")\r\n\t\tmeta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;")\r\n\t\t// if lt IE 9\r\n\t\t\tscript(type="text/javascript", src="js/html5shiv.js")\r\n\t\tlink(rel="stylesheet", href="css/style.css", type="text/css")\r\n\tbody\r\n\t\theader\r\n\t\t\th1\r\n\t\t.container\r\n\r\n\t\tfooter\r\n\r\n\t\tscript(type="text/javascript", src="js/jquery-1.11.0.min.js")\r\n\t\t// if IE\r\n\t\t\tscript(type="text/javascript", src="js/placeholder.js")'
+
+
+    'tplh5bp':
+        'prefix': 'tplh5bp'
+        'body': 'doctype html\nhtml(class="no-js")\n\thead\n\t\t//- TODO: Check if it\'s the good charset\n\t\tmeta(charset=\'utf-8\')\n\t\tmeta(http-equiv=\'X-UA-Compatible\', content=\'IE=edge\')\n\t\ttitle\n\t\tmeta(name=\'description\', content=\'\')\n\t\tmeta(name=\'viewport\', content=\'width=device-width, initial-scale=1\')\n\t\t//- TODO : Place favicon.ico and apple-touch-icon.png in the root directory\n\t\tblock css\n\t\t\tlink(rel=\'stylesheet\', href=\'css/normalize.css\')\n\t\t\tlink(rel=\'stylesheet\', href=\'css/main.css\')\n\t\tblock top-script\n\t\t\tscript(src=\'js/vendor/modernizr-2.7.1.min.js\')\n\tbody\n\t\t//-\n\t\t\tAdd your site or application content here\n\t\tblock main\n\t\t\tp Hello world! This is HTML5 Boilerplate.\n\n\t\tblock bottom-script\n\t\t\tscript(src=\'//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js\')\n\t\t\tscript.\n\t\t\t\twindow.jQuery || document.write(\'<script src="js/vendor/<jquery-1 class="11 0"></jquery-1>.min.js"><\\\/script>\')\n\t\t\tscript(src=\'js/plugins.js\')\n\t\t\tscript(src=\'js/main.js\')\n\t\t\t//- TODO : Google Analytics: change UA-XXXXX-X to be your site\\\'s ID.\n\t\t\tscript.\n\t\t\t\t(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=\n\t\t\t\tfunction(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;\n\t\t\t\te=o.createElement(i);r=o.getElementsByTagName(i)[0];\n\t\t\t\te.src=\'//www.google-analytics.com/analytics.js\';\n\t\t\t\tr.parentNode.insertBefore(e,r)}(window,document,\'script\',\'ga\'));\n\t\t\t\tga(\'create\',\'UA-XXXXX-X\');ga(\'send\',\'pageview\');'
+
+
+    'type=""':
+        'prefix': 'typ'
+        'body': 'type="$1"'
+
+
+    'value=""':
+        'prefix': 'val'
+        'body': 'value="$1"'
