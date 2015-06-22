@@ -814,7 +814,7 @@
     'name': 'constant.language.js'
   'tag_id':
     'match': '#[\\w-]+'
-    'name': 'constant.id.tag.jade'
+    'name': 'entity.other.attribute-name.id.jade'
   'tag_mixin_attributes':
     'begin': '(&attributes\\()'
     'captures':
