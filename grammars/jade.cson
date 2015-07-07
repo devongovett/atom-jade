@@ -649,12 +649,12 @@
       '4':
         'name': 'entity.name.function.jade'
     'comment': 'Mixin declaration and use, including the new \'+\' syntax.'
-    'end': '(?=\\])|$'
+    'end': '(?=\\])|(?=\\))|$'
     'name': 'meta.mixin.jade'
     'patterns': [
       {
-        'begin': ''
-        'end': '(?=\\])|$'
+        'begin': '(\\(|\\[)'
+        'end': '(?=\\])|(?=\\))|$'
         'name': 'args.mixin.jade'
         'patterns': [
           {
