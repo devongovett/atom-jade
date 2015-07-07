@@ -46,6 +46,7 @@ html
 
     .test + mixin use
       +lala(123, "mixin + call 1")
+      +lala(123, "mixin + call 1").extra-class(extra-attribute="parse me in attributes") Text
 
     mixin another()
       - console.log(attributes)
