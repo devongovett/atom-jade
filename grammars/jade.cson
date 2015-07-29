@@ -163,7 +163,7 @@
     ]
   }
   {
-    'begin': '^(\\s*):(coffee(script)?)(?=\\(|$)'
+    'begin': '^(\\s*):(coffee(-?script)?)(?=\\(|$)'
     'beginCaptures':
       '2':
         'name': 'constant.language.name.coffeescript.filter.jade'
