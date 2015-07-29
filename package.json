@@ -1,6 +1,6 @@
 {
   "name": "language-jade",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "private": true,
   "description": "Jade TextMate bundle converted for Atom",
   "repository": "https://github.com/devongovett/atom-jade",
