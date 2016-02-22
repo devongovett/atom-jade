@@ -1,7 +1,10 @@
 'fileTypes': [
-  'jade'
+  'py.pug'
+  'pypug'
+  'py.jade'
+  'pyjade'
 ]
-'name': 'Jade'
+'name': 'Pug (Python)'
 'patterns': [
   {
     'comment': 'Doctype declaration.'
@@ -352,7 +355,7 @@
         'include': '#brackets_js'
       }
       {
-        'include': 'source.js'
+        'include': 'source.python'
       }
     ]
   'case_conds':
@@ -373,7 +376,7 @@
             'include': '#case_when_paren'
           }
           {
-            'include': 'source.js'
+            'include': 'source.python'
           }
         ]
       }
@@ -401,7 +404,7 @@
         'name': 'invalid.illegal.name.tag.jade'
       }
       {
-        'include': 'source.js'
+        'include': 'source.python'
       }
     ]
   'complete_tag':
@@ -520,7 +523,7 @@
         'name': 'js.embedded.control.flow.jade'
         'patterns': [
           {
-            'include': 'source.js'
+            'include': 'source.python'
           }
         ]
       }
@@ -638,7 +641,7 @@
         'name': 'invalid.illegal.tag.jade'
       }
       {
-        'include': 'source.js'
+        'include': 'source.python'
       }
     ]
   'mixins':
@@ -649,12 +652,12 @@
       '4':
         'name': 'entity.name.function.jade'
     'comment': 'Mixin declaration and use, including the new \'+\' syntax.'
-    'end': '(?=\\])|(?=\\))|$'
+    'end': '(?=\\])|$'
     'name': 'meta.mixin.jade'
     'patterns': [
       {
-        'begin': '(\\(|\\[)'
-        'end': '(?=\\])|(?=\\))|$'
+        'begin': ''
+        'end': '(?=\\])|$'
         'name': 'args.mixin.jade'
         'patterns': [
           {
@@ -667,7 +670,7 @@
             'include': '#tag_attribute_value_braces'
           }
           {
-            'include': 'source.js'
+            'include': 'source.python'
           }
         ]
       }
@@ -683,7 +686,7 @@
         'include': '#brackets_js'
       }
       {
-        'include': 'source.js'
+        'include': 'source.python'
       }
     ]
   'string':
@@ -720,7 +723,7 @@
         'include': '#string'
       }
       {
-        'include': 'source.js'
+        'include': 'source.python'
       }
     ]
   'tag_attribute_value_brackets':
@@ -741,7 +744,7 @@
         'include': '#string'
       }
       {
-        'include': 'source.js'
+        'include': 'source.python'
       }
     ]
   'tag_attribute_value_paren':
@@ -762,7 +765,7 @@
         'include': '#string'
       }
       {
-        'include': 'source.js'
+        'include': 'source.python'
       }
     ]
   'tag_attributes':
@@ -803,7 +806,7 @@
             'include': '#string'
           }
           {
-            'include': 'source.js'
+            'include': 'source.python'
           }
         ]
       }
@@ -827,7 +830,7 @@
         'name': 'storage.type.keyword.jade'
       }
       {
-        'include': 'source.js'
+        'include': 'source.python'
       }
     ]
   'tag_name':
@@ -845,7 +848,7 @@
             'name': 'invalid.illegal.tag.jade'
           }
           {
-            'include': 'source.js'
+            'include': 'source.python'
           }
         ]
       }
@@ -884,7 +887,7 @@
         'include': '#brackets_js'
       }
       {
-        'include': 'source.js'
+        'include': 'source.python'
       }
     ]
-'scopeName': 'source.jade'
+'scopeName': 'source.pyjade'
