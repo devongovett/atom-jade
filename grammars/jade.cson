@@ -810,7 +810,7 @@
     ]
   'tag_classes':
     'match': '\\.[\\w-]+'
-    'name': 'constant.language.js'
+    'name': 'entity.other.attribute-name.class.jade'
   'tag_id':
     'match': '#[\\w-]+'
     'name': 'entity.other.attribute-name.id.jade'
