@@ -809,11 +809,21 @@
       }
     ]
   'tag_classes':
-    'match': '\\.[\\w-]+'
-    'name': 'entity.other.attribute-name.class.jade'
+    'captures':
+      '1':
+        'name': 'punctuation.definition.entity.css.jade'
+      '2':
+        'name': 'entity.other.attribute-name.class.css.jade'
+    'match': '(\\.)([a-zA-Z0-9_-]+)'
+    'name': 'meta.selector.css.jade'
   'tag_id':
-    'match': '#[\\w-]+'
-    'name': 'entity.other.attribute-name.id.jade'
+    'captures':
+      '1':
+        'name': 'punctuation.definition.entity.css.jade'
+      '2':
+        'name': 'entity.other.attribute-name.id.css.jade'
+    'match': '(#)([\\w-]+)'
+    'name': 'meta.selector.css.jade'
   'tag_mixin_attributes':
     'begin': '(&attributes\\()'
     'captures':
