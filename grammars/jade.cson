@@ -811,18 +811,14 @@
   'tag_classes':
     'captures':
       '1':
-        'name': 'punctuation.definition.entity.css.jade'
-      '2':
         'name': 'entity.other.attribute-name.class.css.jade'
-    'match': '(\\.)([a-zA-Z0-9_-]+)'
+    'match': '(\\.[a-zA-Z0-9_-]+)'
     'name': 'meta.selector.css.jade'
   'tag_id':
     'captures':
       '1':
-        'name': 'punctuation.definition.entity.css.jade'
-      '2':
         'name': 'entity.other.attribute-name.id.css.jade'
-    'match': '(#)([\\w-]+)'
+    'match': '(#[\\w-]+)'
     'name': 'meta.selector.css.jade'
   'tag_mixin_attributes':
     'begin': '(&attributes\\()'
