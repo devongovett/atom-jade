@@ -506,23 +506,37 @@
       }
     ]
   'flow_control':
-    'begin': '(for|if|else if|else|each|until|while|unless|case)(\\s+|$)'
-    'captures':
-      '1':
-        'name': 'storage.type.function.jade'
-    'comment': 'Jade control flow.'
-    'end': '$'
-    'name': 'meta.control.flow.jade'
     'patterns': [
       {
-        'begin': ''
+        'begin': '(for|if|else if|each|until|while|unless|case)(\\s+|$)'
+        'captures':
+          '1':
+            'name': 'storage.type.function.jade'
+        'comment': 'Jade control flow.'
         'end': '$'
-        'name': 'js.embedded.control.flow.jade'
+        'name': 'meta.control.flow.jade'
         'patterns': [
           {
-            'include': 'source.js'
+            'begin': ''
+            'end': '$'
+            'name': 'js.embedded.control.flow.jade'
+            'patterns': [
+              {
+                'include': 'source.js'
+              }
+            ]
           }
         ]
+      }
+      {
+        'match': '(else)(?! if)\\s*([^\\s].*)?$'
+        'captures':
+          '1':
+            'name': 'storage.type.function.jade'
+          '2':
+            'name': 'invalid.illegal.html_entity.text.jade'
+        'comment': 'Jade control flow.'
+        'name': 'meta.control.flow.jade'
       }
     ]
   'html_entity':
