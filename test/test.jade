@@ -269,3 +269,7 @@ html
         ng-click  = "onFilterRemove()"
         ng-show   = "filter.query !==''"
       )
+      
+      //- angular2 property and event bindings
+      input(type="text", [name]="nameProperty", [(value)]="valueEvent", disabled)
+      input(type="checkbox", [name]="nameProperty", (value)="valueProperty($event)", [disabled], (checked))

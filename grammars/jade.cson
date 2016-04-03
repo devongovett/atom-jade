@@ -777,11 +777,11 @@
         'captures':
           '1':
             'name': 'entity.other.attribute-name.tag.jade'
-        'match': '([^\\s(),=/]+)\\s*((?=\\))|,|\\s+|$)(?!=)'
+        'match': '([^\\s(),=/]+|\\[[^\\s,=/]+]|\\([^\\s(),=/]+\\))\\s*((?=\\))|,|\\s+|$)(?!=)'
         'name': 'attributes.tag.jade'
       }
       {
-        'begin': '([^\\s(),=/]*[^\\s(),=!/])\\s*(!?\\=)'
+        'begin': '([^\\s,=/]*[^\\s,=!/])\\s*(!?\\=)'
         'beginCaptures':
           '1':
             'name': 'entity.other.attribute-name.tag.jade'
