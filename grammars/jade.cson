@@ -791,11 +791,7 @@
         'captures':
           '1':
             'name': 'entity.other.attribute-name.tag.jade'
-<<<<<<< a2570521d89ae486e8d4336042196ee3875ca26d
-        'match': '([^\\s(),=/]+|\\[[^\\s,=/]+]|\\([^\\s(),=/]+\\))\\s*((?=\\))|,|\\s+|$)(?!=)'
-=======
         'match': '([^\\s(),=/]+|\\[[^\\s,=/]+]|\\([^\\s(),=/]+\\))\\s*((?=\\))|,|\\s+|$)(?!\\s*=)'
->>>>>>> Issue 14: Resolved, fixed highlighting of key/value attributes with more than one character of whitespace before the equal sign.
         'name': 'attributes.tag.jade'
       }
       {
