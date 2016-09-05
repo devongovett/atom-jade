@@ -572,7 +572,7 @@
         'name': 'tag.inline.jade'
         'patterns': [
           {
-            'include': '#tag_name'
+            'include': '#inline_jade_tag_name'
           }
           {
             'include': '#tag_id'
@@ -870,6 +870,9 @@
         ]
       }
     ]
+  'inline_jade_tag_name':
+    'match': '(?<=#\\[)(\\w+)'
+    'name': 'entity.name.tag.jade'
   'tag_text':
     'begin': '(?=.)'
     'end': '$'
