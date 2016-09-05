@@ -871,7 +871,7 @@
       }
     ]
   'inline_jade_tag_name':
-    'match': '(?<=#\\[|:\\s)([\\w-]+)'
+    'match': '(?<=#\\[|[^\\]]:\\s)([\\w-]+)'
     'name': 'entity.name.tag.jade'
   'tag_text':
     'begin': '(?=.)'
