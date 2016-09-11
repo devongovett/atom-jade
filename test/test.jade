@@ -273,3 +273,22 @@ html
       //- angular2 property and event bindings
       input(type="text", [name]="nameProperty", [(value)]="valueEvent", disabled)
       input(type="checkbox", [name]="nameProperty", (value)="valueProperty($event)", [disabled], (checked))
+    
+    // See issue #70 
+    script
+        include ../temp/index.js
+    script(type="text/javascript")
+        include ../temp/index.js
+    script(type="application/javascript")
+        include ../temp/index.js
+    style
+        include ../temp/index.css
+
+    script.
+        var number = 123;
+    script(type="text/javascript").
+        var text = 'text';
+    script(type="application/javascript").
+        var object = {};
+    style.
+        .test { color: #fff }

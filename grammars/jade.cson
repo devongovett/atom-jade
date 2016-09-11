@@ -31,7 +31,7 @@
     ]
   }
   {
-    'begin': '^(\\s*)(script)(?=[.#(\\s])((?![^\\n]*type=)|(?=[^\\n]*text/javascript))'
+    'begin': '^(\\s*)(script)((\\.$)|(?=[.#(].*\\.$))'
     'beginCaptures':
       '2':
         'name': 'entity.name.tag.script.jade'
@@ -65,10 +65,10 @@
     ]
   }
   {
-    'begin': '^(\\s*)(style)(?=[.#(\\s])'
+    'begin': '^(\\s*)(style)((\\.$)|(?=[.#(].*\\.$))'
     'beginCaptures':
       '2':
-        'name': 'entity.name.tag.script.jade'
+        'name': 'entity.name.tag.style.jade'
     'comment': 'Style tag with CSS code.'
     'end': '^(?!(\\1\\s)|\\s*$)'
     'name': 'source.style.jade'
