@@ -572,7 +572,7 @@
         'name': 'tag.inline.jade'
         'patterns': [
           {
-            'include': '#tag_name'
+            'include': '#inline_jade_tag_name'
           }
           {
             'include': '#tag_id'
@@ -868,6 +868,30 @@
             'include': 'source.js'
           }
         ]
+      }
+    ]
+  'inline_jade_tag_name':
+    'begin': '(?<=#\\[)'
+    'end': '(?=(?<!:)\\s|\\])'
+    'patterns': [
+      {
+        'match': '((\\w|-|:(?!\\s))+)'
+        'name': 'entity.name.tag.jade'
+      }
+      {
+        'include': '#tag_classes'
+      }
+      {
+        'include': '#tag_id'
+      }
+      {
+        'include': '#tag_attributes'
+      }
+      {
+        'include': '#tag_mixin_attributes'
+      }
+      {
+        'include': '#printed_expression'
       }
     ]
   'tag_text':
