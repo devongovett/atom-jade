@@ -632,6 +632,9 @@
   'interpolated_value':
     'begin': '(?<!\\\\)[#!]\\{(?=.*?\\})'
     'end': '\\}'
+    'captures':
+      '0':
+        'name': 'punctuation.section.embedded.jade'
     'name': 'string.interpolated.jade'
     'patterns': [
       {
