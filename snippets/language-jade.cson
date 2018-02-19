@@ -83,7 +83,7 @@
         'body': 'if ${1:condition}\n  ${2://- code}'
 
 
-    'if condition':
+    'if else condition':
         'prefix': 'if'
         'body': 'if ${1:condition}\n  ${2://- code}\nelse\n  ${3://- code}'
 
